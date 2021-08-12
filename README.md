@@ -31,7 +31,7 @@ flush privileges;
   vue ui
   run dev
 ```
-#后端启动
+# 后端启动
 ```bash
   python3 manage.py runserver 127.0.0.1:8081
 ```
