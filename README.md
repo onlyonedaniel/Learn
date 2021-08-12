@@ -29,7 +29,7 @@ flush privileges;
 ```bash
   npm install 
   vue ui
-  run dev
+  npm run dev
 ```
 # 后端启动
 ```bash
