@@ -25,11 +25,15 @@ import { getChartOneApi, postChartTwoApi } from '../../http/api'
 export default {
   name: "charOne",
   data () {
-    return { chartData: [] }
+    return {      chartData: [],
+    }
   },
   mounted () {
     this.getData()
     this.timer()
+  },
+  beforeRouteLeave (to, from, next) {
+    clearInterval(this.timer)
   },
   methods: {
     moreChart () {
